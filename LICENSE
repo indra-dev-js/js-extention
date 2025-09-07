@@ -1,6 +1,14 @@
+
+---
+
+## 🔹 LICENSE (MIT template)
+
+Bikin file `LICENSE` dengan isi ini:
+
+```text
 MIT License
 
-Copyright (c) 2025 indra
+Copyright (c) 2025 [Nama Kamu]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
