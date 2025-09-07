@@ -1,29 +1,61 @@
 # js-extensions
 
-🛠️ Kumpulan static method dan helper untuk `Array`, `Object`, dan tipe bawaan JavaScript lainnya.  
-Tujuannya: nambahin method custom dengan gaya native, mirip API bawaan (`Array.isArray`, `Object.keys`, dll).  
+🛠️ **Kumpulan static method dan helper** untuk `Array`, `Object`, dan tipe bawaan JavaScript lainnya.  
+Tujuannya: menambahkan method custom dengan gaya native, mirip API bawaan (`Array.isArray`, `Object.keys`, dll).
 
 ---
 
 ## ✨ Features
-- 🔹 Tambahin method baru tanpa polusi `prototype`
-- 🔹 Gunakan `Object.defineProperty` agar method aman (non-enumerable, non-writable)
-- 🔹 Ringan & dependency-free
-- 🔹 Bergaya *MDN-style documentation*
+
+- 🔹 Tambahkan method baru tanpa polusi `prototype`  
+- 🔹 Gunakan `Object.defineProperty` agar method aman (non-enumerable, non-writable, configurable)  
+- 🔹 Ringan & dependency-free  
+- 🔹 Dokumentasi bergaya _MDN-style_
 
 ---
 
 ## 📦 Installation
-Belum tersedia di npm (WIP). Untuk saat ini cukup copy-paste utility yang lo butuhkan.
+
+**Syntax**:
+
+```bash
+# install package
+npm install js-extensions
+
+# cek versi npm
+npm -v
+```
 
 ---
 
 ## 📚 API
 
-### `Array.empty(array)`
+### Array.isEmpty(array)
 
-Static method untuk mengecek apakah sebuah array tidak kosong dan tidak mengandung string kosong.
+Static method untuk mengecek apakah sebuah array:
 
-**Syntax**
+- **Kosong** (`[]`)  
+- **Mengandung string kosong saja** (`[""]`)  
+
+Lebih aman dibanding cek manual karena sudah menangani tipe data non-array dan string kosong.
+
+**Syntax**:
+
 ```js
-Array.empty(array)
+Array.isEmpty(array)
+```
+
+**Parameter**:
+
+| Parameter | Tipe   | Keterangan                  |
+|-----------|-------|-----------------------------|
+| array     | Array | Array yang ingin dicek      |
+
+**Contoh**:
+
+```js
+Array.isEmpty([])          // true
+Array.isEmpty([""])        // true
+Array.isEmpty([1,2,3])     // false
+Array.isEmpty("not array") // false
+```
