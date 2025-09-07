@@ -1,8 +1,9 @@
 {
-  "name": "js-extensions",
-  "version": "1.0.0",
+  "name": "@buildin/js-extensions",
+  "version": "1.0.4",
   "description": "🛠️ Kumpulan extension custom untuk Array, Object, dan tipe bawaan JavaScript. Tambahan method ala native, ringan, dan aman.",
   "main": "index.js",
+  "type": "module",
   "keywords": [
     "javascript",
     "extensions",
@@ -12,5 +13,8 @@
     "utilities"
   ],
   "author": "indra",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@buildin/js-extensions": "^1.0.4"
+  }
 }
