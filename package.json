@@ -1,0 +1,16 @@
+{
+  "name": "js-extensions",
+  "version": "1.0.0",
+  "description": "🛠️ Kumpulan extension custom untuk Array, Object, dan tipe bawaan JavaScript. Tambahan method ala native, ringan, dan aman.",
+  "main": "index.js",
+  "keywords": [
+    "javascript",
+    "extensions",
+    "array",
+    "object",
+    "helpers",
+    "utilities"
+  ],
+  "author": "indra",
+  "license": "MIT"
+}
